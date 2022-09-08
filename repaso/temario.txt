@@ -19,7 +19,13 @@ component life cycle
 hooks
   ✅ useState
   ✅ useEffect
-  useRef
-  ? useContext
-  ? useReducer
-  useCallback
+  🍪 useRef
+  🍪 useContext
+  🍪 useReducer
+  🍪 useCallback
+  ? useMemo
+  🍪 Custom hooks
+
+routing
+redux
+
