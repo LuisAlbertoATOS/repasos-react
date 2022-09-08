@@ -29,3 +29,4 @@ hooks
 routing
 redux
 
+https://www.freecodecamp.org/news/react-interview-questions-and-answers/
