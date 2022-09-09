@@ -30,5 +30,3 @@ routing
 redux
 
 https://www.freecodecamp.org/news/react-interview-questions-and-answers/
-
-![React Hook LifeCycle](https://blog.logrocket.com/wp-content/uploads/2021/05/react-hooks-lifecycle-diagram.png)
