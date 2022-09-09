@@ -1,9 +1,12 @@
 import * as React from "react";
+import { useContext } from "react";
 import { useState, useEffect } from "react";
+import { AgeManagmentContext, UserContext } from "../App";
 
 const Form = (props) => {
   const [employeeAge, setEmployeeAge] = useState(0);
   const [ageMessage, setAgeMessage] = useState('Welcome!');
+  const {setAge,age} = useContext(AgeManagmentContext);
 
   useEffect(() => {
     if(employeeAge >= 18){
@@ -11,12 +14,11 @@ const Form = (props) => {
     } else{
       setAgeMessage('Sorry, you are under 18');
     }
-    console.log('use effect');
-  }, [employeeAge, usao, precio, marcas]);
+    setAge(employeeAge);
+  }, [employeeAge]);
   
   const employeeAgeHandler = (event) => {
     setEmployeeAge(event.target.value);
-    console.log('handler');
   };
 
   return (

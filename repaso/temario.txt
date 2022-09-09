@@ -19,8 +19,8 @@ component life cycle
 hooks
   ✅ useState
   ✅ useEffect
-  🍪 useRef
-  🍪 useContext
+  🍪 ! useRef
+  ✅ useContext
   🍪 useReducer
   🍪 useCallback
   ? useMemo

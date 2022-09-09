@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useContext } from "react";
+import { UserContext } from "../App";
 
 const EmployeeList = (props) => {
 
@@ -9,9 +11,11 @@ const EmployeeList = (props) => {
     { name: "Luis" },
   ];
 
+  const {username, username2} = useContext(UserContext);
+
   return (
     <React.Fragment>
-      <h3>ATOS Employees</h3>
+      <h3>ATOS Employees. Welcome {username} , {username2}</h3>
       {employees.length === 0 && <p>No employees</p>}
       {employees.length > 0 &&
         employees.map((employee, key) => {
