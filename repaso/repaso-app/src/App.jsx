@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
+import Counters from "./components/counters";
 import EmployeeList from "./components/EmployeeList";
 import Form from "./components/Form";
 import Header from "./components/header";
@@ -18,6 +19,7 @@ function App() {
     <UserContext.Provider value={{ username, username2 }}>
       <AgeManagmentContext.Provider value={{ setAge, age }}>
         <div className="App">
+          <Counters />
           <RefForm />
           <Header
             title={"React App"}
